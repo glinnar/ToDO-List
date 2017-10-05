@@ -42,13 +42,13 @@ if(isset($_POST['delete'])){
           <tr>
             <td>
               <span class="item"><?php echo $row['item'];?></span>
-        </td>
-        <td rowspan="2">
-          <form class="fix" action="list.php" method="post">
-              <input type="hidden" name="id" value='<?php echo $row['id'];?>'/>
-                <input type="submit" class="tablebutton" id="delete" name="delete" value="Delete">
-          </form>
-        </td>
+            </td>
+            <td rowspan="2">
+              <form class="fix" action="list.php" method="post">
+                  <input type="hidden" name="id" value='<?php echo $row['id'];?>'/>
+                  <input type="submit" class="tablebutton" id="delete" name="delete" value="Delete">
+              </form>
+            </td>
           </tr>
           <?php }?>
         </table>
